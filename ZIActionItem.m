@@ -2,7 +2,7 @@
 //  ZIActionItem.m
 //  Maplets
 //
-//  Created by zai chang on 11/22/11.
+//  Created by Zai Chang on 11/22/11.
 //  Copyright (c) 2011 Zaia Design. All rights reserved.
 //
 

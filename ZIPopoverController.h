@@ -1,7 +1,7 @@
 //
 //  ZUIPopoverController.h
 //
-//  Created by Zehao Chang on 11/24/10.
+//  Created by Zai Chang on 11/24/10.
 //  Copyright 2010 Zaia Design. All rights reserved.
 //
 
@@ -10,10 +10,10 @@
 
 @interface ZIPopoverController : UIPopoverController <UIPopoverControllerDelegate>
 {
-	BOOL (^shouldDismissBlock) (void);
-	void (^didDismissBlock)(void);
+	BOOL (^shouldDismiss) (void);
+	void (^didDismiss)(void);
 }
-@property (nonatomic,copy) BOOL (^shouldDismissBlock) (void);
-@property (nonatomic,copy) void (^didDismissBlock) (void);
+@property (nonatomic,copy) BOOL (^shouldDismiss) (void);
+@property (nonatomic,copy) void (^didDismiss) (void);
 
 @end

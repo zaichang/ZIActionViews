@@ -1,0 +1,8 @@
+.DS_Store
+build
+.svn
+*.swp
+
+# For Xcode 4
+xcuserdata/
+*.xcuserdatad

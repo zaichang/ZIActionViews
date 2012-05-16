@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39844F07153565F100C29AE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F06153565F100C29AE4 /* UIKit.framework */; };
+		39844F09153565F100C29AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F08153565F100C29AE4 /* Foundation.framework */; };
+		39844F0B153565F100C29AE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F0A153565F100C29AE4 /* CoreGraphics.framework */; };
+		39844F11153565F100C29AE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39844F0F153565F100C29AE4 /* InfoPlist.strings */; };
+		39844F13153565F100C29AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F12153565F100C29AE4 /* main.m */; };
+		39844F17153565F100C29AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F16153565F100C29AE4 /* AppDelegate.m */; };
+		39844F1A153565F100C29AE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F19153565F100C29AE4 /* ViewController.m */; };
+		39844F1D153565F100C29AE4 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39844F1B153565F100C29AE4 /* ViewController_iPhone.xib */; };
+		39844F20153565F100C29AE4 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39844F1E153565F100C29AE4 /* ViewController_iPad.xib */; };
+		39844F28153565F100C29AE4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F27153565F100C29AE4 /* SenTestingKit.framework */; };
+		39844F29153565F100C29AE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F06153565F100C29AE4 /* UIKit.framework */; };
+		39844F2A153565F100C29AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F08153565F100C29AE4 /* Foundation.framework */; };
+		39844F32153565F100C29AE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39844F30153565F100C29AE4 /* InfoPlist.strings */; };
+		39844F35153565F100C29AE4 /* ZIActionViewsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F34153565F100C29AE4 /* ZIActionViewsTestTests.m */; };
+		39844F49153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */; };
+		39844F4A153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */; };
+		39844F4B153566B500C29AE4 /* ZIActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F42153566B500C29AE4 /* ZIActionItem.m */; };
+		39844F4C153566B500C29AE4 /* ZIActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F42153566B500C29AE4 /* ZIActionItem.m */; };
+		39844F4D153566B500C29AE4 /* ZIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F44153566B500C29AE4 /* ZIActionSheet.m */; };
+		39844F4E153566B500C29AE4 /* ZIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F44153566B500C29AE4 /* ZIActionSheet.m */; };
+		39844F4F153566B500C29AE4 /* ZIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F46153566B500C29AE4 /* ZIAlertView.m */; };
+		39844F50153566B500C29AE4 /* ZIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F46153566B500C29AE4 /* ZIAlertView.m */; };
+		39844F51153566B500C29AE4 /* ZIPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F48153566B500C29AE4 /* ZIPopoverController.m */; };
+		39844F52153566B500C29AE4 /* ZIPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F48153566B500C29AE4 /* ZIPopoverController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39844F2B153565F100C29AE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39844EF9153565F100C29AE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39844F01153565F100C29AE4;
+			remoteInfo = ZIActionViewsTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39844F02153565F100C29AE4 /* ZIActionViewsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZIActionViewsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39844F06153565F100C29AE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39844F08153565F100C29AE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39844F0A153565F100C29AE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		39844F0E153565F100C29AE4 /* ZIActionViewsTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZIActionViewsTest-Info.plist"; sourceTree = "<group>"; };
+		39844F10153565F100C29AE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39844F12153565F100C29AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39844F14153565F100C29AE4 /* ZIActionViewsTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZIActionViewsTest-Prefix.pch"; sourceTree = "<group>"; };
+		39844F15153565F100C29AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39844F16153565F100C29AE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39844F18153565F100C29AE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39844F19153565F100C29AE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39844F1C153565F100C29AE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		39844F1F153565F100C29AE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		39844F26153565F100C29AE4 /* ZIActionViewsTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZIActionViewsTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39844F27153565F100C29AE4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		39844F2F153565F100C29AE4 /* ZIActionViewsTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZIActionViewsTestTests-Info.plist"; sourceTree = "<group>"; };
+		39844F31153565F100C29AE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		39844F33153565F100C29AE4 /* ZIActionViewsTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIActionViewsTestTests.h; sourceTree = "<group>"; };
+		39844F34153565F100C29AE4 /* ZIActionViewsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIActionViewsTestTests.m; sourceTree = "<group>"; };
+		39844F3F153566B500C29AE4 /* UIViewController+ContextMenusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ContextMenusManagement.h"; path = "../../UIViewController+ContextMenusManagement.h"; sourceTree = "<group>"; };
+		39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ContextMenusManagement.m"; path = "../../UIViewController+ContextMenusManagement.m"; sourceTree = "<group>"; };
+		39844F41153566B500C29AE4 /* ZIActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIActionItem.h; path = ../../ZIActionItem.h; sourceTree = "<group>"; };
+		39844F42153566B500C29AE4 /* ZIActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIActionItem.m; path = ../../ZIActionItem.m; sourceTree = "<group>"; };
+		39844F43153566B500C29AE4 /* ZIActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIActionSheet.h; path = ../../ZIActionSheet.h; sourceTree = "<group>"; };
+		39844F44153566B500C29AE4 /* ZIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIActionSheet.m; path = ../../ZIActionSheet.m; sourceTree = "<group>"; };
+		39844F45153566B500C29AE4 /* ZIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIAlertView.h; path = ../../ZIAlertView.h; sourceTree = "<group>"; };
+		39844F46153566B500C29AE4 /* ZIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIAlertView.m; path = ../../ZIAlertView.m; sourceTree = "<group>"; };
+		39844F47153566B500C29AE4 /* ZIPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIPopoverController.h; path = ../../ZIPopoverController.h; sourceTree = "<group>"; };
+		39844F48153566B500C29AE4 /* ZIPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIPopoverController.m; path = ../../ZIPopoverController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39844EFF153565F100C29AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844F07153565F100C29AE4 /* UIKit.framework in Frameworks */,
+				39844F09153565F100C29AE4 /* Foundation.framework in Frameworks */,
+				39844F0B153565F100C29AE4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39844F22153565F100C29AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844F28153565F100C29AE4 /* SenTestingKit.framework in Frameworks */,
+				39844F29153565F100C29AE4 /* UIKit.framework in Frameworks */,
+				39844F2A153565F100C29AE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39844EF7153565F100C29AE4 = {
+			isa = PBXGroup;
+			children = (
+				39844F0C153565F100C29AE4 /* ZIActionViewsTest */,
+				39844F2D153565F100C29AE4 /* ZIActionViewsTestTests */,
+				39844F05153565F100C29AE4 /* Frameworks */,
+				39844F03153565F100C29AE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39844F03153565F100C29AE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39844F02153565F100C29AE4 /* ZIActionViewsTest.app */,
+				39844F26153565F100C29AE4 /* ZIActionViewsTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39844F05153565F100C29AE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39844F06153565F100C29AE4 /* UIKit.framework */,
+				39844F08153565F100C29AE4 /* Foundation.framework */,
+				39844F0A153565F100C29AE4 /* CoreGraphics.framework */,
+				39844F27153565F100C29AE4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39844F0C153565F100C29AE4 /* ZIActionViewsTest */ = {
+			isa = PBXGroup;
+			children = (
+				39844F3E1535666E00C29AE4 /* Classes */,
+				39844F15153565F100C29AE4 /* AppDelegate.h */,
+				39844F16153565F100C29AE4 /* AppDelegate.m */,
+				39844F18153565F100C29AE4 /* ViewController.h */,
+				39844F19153565F100C29AE4 /* ViewController.m */,
+				39844F1B153565F100C29AE4 /* ViewController_iPhone.xib */,
+				39844F1E153565F100C29AE4 /* ViewController_iPad.xib */,
+				39844F0D153565F100C29AE4 /* Supporting Files */,
+			);
+			path = ZIActionViewsTest;
+			sourceTree = "<group>";
+		};
+		39844F0D153565F100C29AE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39844F0E153565F100C29AE4 /* ZIActionViewsTest-Info.plist */,
+				39844F0F153565F100C29AE4 /* InfoPlist.strings */,
+				39844F12153565F100C29AE4 /* main.m */,
+				39844F14153565F100C29AE4 /* ZIActionViewsTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39844F2D153565F100C29AE4 /* ZIActionViewsTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				39844F33153565F100C29AE4 /* ZIActionViewsTestTests.h */,
+				39844F34153565F100C29AE4 /* ZIActionViewsTestTests.m */,
+				39844F2E153565F100C29AE4 /* Supporting Files */,
+			);
+			path = ZIActionViewsTestTests;
+			sourceTree = "<group>";
+		};
+		39844F2E153565F100C29AE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39844F2F153565F100C29AE4 /* ZIActionViewsTestTests-Info.plist */,
+				39844F30153565F100C29AE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39844F3E1535666E00C29AE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				39844F3F153566B500C29AE4 /* UIViewController+ContextMenusManagement.h */,
+				39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */,
+				39844F41153566B500C29AE4 /* ZIActionItem.h */,
+				39844F42153566B500C29AE4 /* ZIActionItem.m */,
+				39844F43153566B500C29AE4 /* ZIActionSheet.h */,
+				39844F44153566B500C29AE4 /* ZIActionSheet.m */,
+				39844F45153566B500C29AE4 /* ZIAlertView.h */,
+				39844F46153566B500C29AE4 /* ZIAlertView.m */,
+				39844F47153566B500C29AE4 /* ZIPopoverController.h */,
+				39844F48153566B500C29AE4 /* ZIPopoverController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39844F01153565F100C29AE4 /* ZIActionViewsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39844F38153565F100C29AE4 /* Build configuration list for PBXNativeTarget "ZIActionViewsTest" */;
+			buildPhases = (
+				39844EFE153565F100C29AE4 /* Sources */,
+				39844EFF153565F100C29AE4 /* Frameworks */,
+				39844F00153565F100C29AE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZIActionViewsTest;
+			productName = ZIActionViewsTest;
+			productReference = 39844F02153565F100C29AE4 /* ZIActionViewsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39844F25153565F100C29AE4 /* ZIActionViewsTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39844F3B153565F100C29AE4 /* Build configuration list for PBXNativeTarget "ZIActionViewsTestTests" */;
+			buildPhases = (
+				39844F21153565F100C29AE4 /* Sources */,
+				39844F22153565F100C29AE4 /* Frameworks */,
+				39844F23153565F100C29AE4 /* Resources */,
+				39844F24153565F100C29AE4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39844F2C153565F100C29AE4 /* PBXTargetDependency */,
+			);
+			name = ZIActionViewsTestTests;
+			productName = ZIActionViewsTestTests;
+			productReference = 39844F26153565F100C29AE4 /* ZIActionViewsTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39844EF9153565F100C29AE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 39844EFC153565F100C29AE4 /* Build configuration list for PBXProject "ZIActionViewsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 39844EF7153565F100C29AE4;
+			productRefGroup = 39844F03153565F100C29AE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39844F01153565F100C29AE4 /* ZIActionViewsTest */,
+				39844F25153565F100C29AE4 /* ZIActionViewsTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39844F00153565F100C29AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844F11153565F100C29AE4 /* InfoPlist.strings in Resources */,
+				39844F1D153565F100C29AE4 /* ViewController_iPhone.xib in Resources */,
+				39844F20153565F100C29AE4 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39844F23153565F100C29AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844F32153565F100C29AE4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39844F24153565F100C29AE4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39844EFE153565F100C29AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844F13153565F100C29AE4 /* main.m in Sources */,
+				39844F17153565F100C29AE4 /* AppDelegate.m in Sources */,
+				39844F1A153565F100C29AE4 /* ViewController.m in Sources */,
+				39844F49153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */,
+				39844F4B153566B500C29AE4 /* ZIActionItem.m in Sources */,
+				39844F4D153566B500C29AE4 /* ZIActionSheet.m in Sources */,
+				39844F4F153566B500C29AE4 /* ZIAlertView.m in Sources */,
+				39844F51153566B500C29AE4 /* ZIPopoverController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39844F21153565F100C29AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39844F35153565F100C29AE4 /* ZIActionViewsTestTests.m in Sources */,
+				39844F4A153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */,
+				39844F4C153566B500C29AE4 /* ZIActionItem.m in Sources */,
+				39844F4E153566B500C29AE4 /* ZIActionSheet.m in Sources */,
+				39844F50153566B500C29AE4 /* ZIAlertView.m in Sources */,
+				39844F52153566B500C29AE4 /* ZIPopoverController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39844F2C153565F100C29AE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39844F01153565F100C29AE4 /* ZIActionViewsTest */;
+			targetProxy = 39844F2B153565F100C29AE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		39844F0F153565F100C29AE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39844F10153565F100C29AE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		39844F1B153565F100C29AE4 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39844F1C153565F100C29AE4 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		39844F1E153565F100C29AE4 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39844F1F153565F100C29AE4 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		39844F30153565F100C29AE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39844F31153565F100C29AE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39844F36153565F100C29AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39844F37153565F100C29AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39844F39153565F100C29AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIActionViewsTest/ZIActionViewsTest-Prefix.pch";
+				INFOPLIST_FILE = "ZIActionViewsTest/ZIActionViewsTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		39844F3A153565F100C29AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIActionViewsTest/ZIActionViewsTest-Prefix.pch";
+				INFOPLIST_FILE = "ZIActionViewsTest/ZIActionViewsTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		39844F3C153565F100C29AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZIActionViewsTest.app/ZIActionViewsTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIActionViewsTest/ZIActionViewsTest-Prefix.pch";
+				INFOPLIST_FILE = "ZIActionViewsTestTests/ZIActionViewsTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		39844F3D153565F100C29AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZIActionViewsTest.app/ZIActionViewsTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZIActionViewsTest/ZIActionViewsTest-Prefix.pch";
+				INFOPLIST_FILE = "ZIActionViewsTestTests/ZIActionViewsTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39844EFC153565F100C29AE4 /* Build configuration list for PBXProject "ZIActionViewsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39844F36153565F100C29AE4 /* Debug */,
+				39844F37153565F100C29AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39844F38153565F100C29AE4 /* Build configuration list for PBXNativeTarget "ZIActionViewsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39844F39153565F100C29AE4 /* Debug */,
+				39844F3A153565F100C29AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		39844F3B153565F100C29AE4 /* Build configuration list for PBXNativeTarget "ZIActionViewsTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39844F3C153565F100C29AE4 /* Debug */,
+				39844F3D153565F100C29AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39844EF9153565F100C29AE4 /* Project object */;
+}

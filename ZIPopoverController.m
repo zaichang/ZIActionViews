@@ -10,8 +10,8 @@
 
 @implementation ZIPopoverController
 
-@synthesize shouldDismissBlock;
-@synthesize didDismissBlock;
+@synthesize shouldDismiss;
+@synthesize didDismiss;
 
 -(id) initWithContentViewController:(UIViewController *)viewController
 {
@@ -24,16 +24,16 @@
 
 - (BOOL)popoverControllerShouldDismissPopover:(UIPopoverController *)popoverController
 {
-	if (shouldDismissBlock)
-		return shouldDismissBlock();
+	if (shouldDismiss)
+		return shouldDismiss();
 	else
 		return YES;
 }
 
 - (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
 {
-	if (didDismissBlock)
-		didDismissBlock();
+	if (didDismiss)
+		didDismiss();
 }
 
 @end

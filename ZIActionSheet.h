@@ -1,7 +1,7 @@
 //
 //  ZIActionSheet.h
 //
-//  Created by Zehao Chang on 11/16/10.
+//  Created by Zai Chang on 11/16/10.
 //  Copyright 2010 Zaia Design. All rights reserved.
 //
 

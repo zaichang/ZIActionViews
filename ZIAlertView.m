@@ -1,7 +1,7 @@
 //
 //  ZIAlertView.m
 //
-//  Created by Zehao Chang on 11/16/10.
+//  Created by Zai Chang on 11/16/10.
 //  Copyright 2010 Zaia Design. All rights reserved.
 //
 
@@ -35,7 +35,7 @@
 			va_list args;
 			va_start(args, otherButtonTitles);
 			NSString * title = nil;
-			while(title = va_arg(args,NSString*)) 
+			while((title = va_arg(args,NSString*)))
 			{
 				[self addButtonWithTitle:title];
 			}
