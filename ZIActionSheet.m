@@ -75,9 +75,14 @@
 
 -(void) dealloc
 {
-	[cancelActionItem release]; cancelActionItem = nil;
-	[destructiveActionItem release]; destructiveActionItem = nil;
-	[otherButtonActionItems release]; otherButtonActionItems = nil;
+	[cancelActionItem release];
+	cancelActionItem = nil;
+	
+	[destructiveActionItem release];
+	destructiveActionItem = nil;
+	
+	[otherButtonActionItems release];
+	otherButtonActionItems = nil;
 	
 	[super dealloc];
 }

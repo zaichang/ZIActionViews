@@ -66,72 +66,66 @@
 
 -(void) log:(NSString*)message
 {
+	statusLabel.text = message;
 	
+	NSLog(@"%@", message);
 }
 
 
 -(IBAction) testZIAlertView:(id)sender
 {
-	ZIAlertView *alertView = [[ZIAlertView alloc] initWithTitle:@"ZIAlertView" 
-														  message:@"" 
-														 delegate:nil 
-												cancelButtonTitle:@"Cancel" 
-												otherButtonTitles:@"Say Goodbye", @"More Options", nil];
-	
-	alertView.clickedButtonAtIndex = ^(int buttonIndex)
+	ZIActionItem *goodbyeItem = [ZIActionItem actionItemWithTitle:@"Say Goodbye" userInfo:nil action:^(ZIActionItem *item)
 	{
-		// Caveat: since the subclass adds button titles manually
-		//		   rather than using the constructor,
-		//		   alertView.firstOtherButtonIndex will be -1 and thus
-		//		   if (buttonIndex == alertView.firstOtherButtonIndex)
-		//		   won't work as expected
+		ZIAlertView *secondAlertView = [[ZIAlertView alloc] initWithTitle:@"Goodbye"
+																  message:@""
+																 delegate:nil
+														cancelButtonTitle:@"Okay"
+														otherButtonTitles:nil];
+		[secondAlertView show];
+		[secondAlertView release];
+	}];
+	
+	ZIActionItem *moreOptionsItem = [ZIActionItem actionItemWithTitle:@"More Options" userInfo:nil action:^(ZIActionItem *item)
+	{
+		ZIActionItem *alertItem = [ZIActionItem actionItemWithTitle:@"Neverending" userInfo:nil action:^(ZIActionItem *item)
+		{
+			[self testZIAlertView:nil];
+		}];
+		ZIActionItem *cancelItem = [ZIActionItem actionItemWithTitle:@"Cancel" userInfo:nil action:nil];
+		ZIAlertView *secondAlertView = [[ZIAlertView alloc] initWithTitle:@"More Options"
+																  message:@""
+														 cancelActionItem:cancelItem
+												   otherButtonActionItems:[NSArray arrayWithObjects:alertItem, nil]];
 		
-		if (buttonIndex == 1)
-		{
-			// Button 1
-			ZIAlertView *secondAlertView = [[ZIAlertView alloc] initWithTitle:@"Goodbye" 
-																		message:@"" 
-																	   delegate:nil
-															  cancelButtonTitle:@"Okay" 
-															  otherButtonTitles:nil];
-			[secondAlertView show];
-			[secondAlertView release];
-		}
-		else if (buttonIndex == 2)
-		{
-			ZIAlertView *secondAlertView = [[ZIAlertView alloc] initWithTitle:@"More Options" 
-																		message:@"" 
-																	   delegate:nil 
-															  cancelButtonTitle:@"Nah" 
-															  otherButtonTitles:@"Another Button", @"Neverending", nil];
-			
-			secondAlertView.clickedButtonAtIndex = ^(int buttonIndex)
-			{
-				if (buttonIndex == 2)
-					[self testZIAlertView:nil];
-			};
-			
-			[secondAlertView show];
-			[secondAlertView release];
-		}
+		[secondAlertView show];
+		[secondAlertView release];
+	}];
+	
+	ZIActionItem *cancelItem = [ZIActionItem actionItemWithTitle:@"Cancel" userInfo:nil action:nil];
+	
+	ZIAlertView *alertView = [[ZIAlertView alloc] initWithTitle:@"ZIAlertView"
+														message:@"Testing alert"
+											   cancelActionItem:cancelItem
+										 otherButtonActionItems:[NSArray arrayWithObjects:goodbyeItem, moreOptionsItem, nil]];
+	
+	alertView.willPresentAlertView = ^
+	{
+		[self log:@"ZIAlertView willPresentAlertView"];
 	};
 	
-	alertView.willPresentAlertView = ^{
-		NSLog(@"ZIAlertView willPresentAlertView");
-	};
-	
-	alertView.didPresentAlertView = ^{
-		NSLog(@"ZIAlertView didPresentAlertView");
+	alertView.didPresentAlertView = ^
+	{
+		[self log:@"ZIAlertView didPresentAlertView"];
 	};
 	
 	alertView.willDismissWithButtonIndex = ^(int buttonIndex)
 	{
-		NSLog(@"ZIAlertView willDismissWithButtonIndex %d", buttonIndex);
+		[self log:[NSString stringWithFormat:@"ZIAlertView willDismissWithButtonIndex %d", buttonIndex]];
 	};
 	
 	alertView.didDismissWithButtonIndex = ^(int buttonIndex)
 	{
-		NSLog(@"ZIAlertView didDismissWithButtonIndex %d", buttonIndex);
+		[self log:[NSString stringWithFormat:@"ZIAlertView didDismissWithButtonIndex %d", buttonIndex]];
 	};
 	
 	[alertView show];
@@ -141,16 +135,19 @@
 -(IBAction) testZIActionSheet:(id)sender
 {
 	ZIActionItem *cancelItem = [ZIActionItem actionItemWithTitle:@"Cancel" userInfo:nil action:nil];
-	ZIActionItem *deleteItem = [ZIActionItem actionItemWithTitle:@"Delete?" userInfo:nil action:^(ZIActionItem *item) {
-		ZIAlertView *alertView = [[ZIAlertView alloc] initWithTitle:@"Deleted!" 
+	ZIActionItem *deleteItem = [ZIActionItem actionItemWithTitle:@"Delete?" userInfo:nil action:^(ZIActionItem *item)
+	{
+		ZIAlertView *alertView = [[ZIAlertView alloc] initWithTitle:@"Deleted!"
 															message:nil
-														   delegate:nil 
-												  cancelButtonTitle:@"Okay" 
+														   delegate:nil
+												  cancelButtonTitle:@"Okay"
 												  otherButtonTitles:nil];
 		[alertView show];
 		[alertView release];
 	}];
-	ZIActionItem *alertItem = [ZIActionItem actionItemWithTitle:@"ZIAlertView" userInfo:nil action:^(ZIActionItem *item) {
+	
+	ZIActionItem *alertItem = [ZIActionItem actionItemWithTitle:@"ZIAlertView" userInfo:nil action:^(ZIActionItem *item)
+	{
 		[self testZIAlertView:nil];
 	}];
 	
@@ -159,22 +156,24 @@
 												destructiveActionItem:deleteItem
 											   otherButtonActionItems:[NSArray arrayWithObjects:alertItem, nil]];
 	
-	actionSheet.willPresentActionSheet = ^{
-		NSLog(@"ZIActionSheet willPresentActionSheet");
+	actionSheet.willPresentActionSheet = ^
+	{
+		[self log:@"ZIActionSheet willPresentActionSheet"];
 	};
 	
-	actionSheet.didPresentActionSheet = ^{
-		NSLog(@"ZIActionSheet didPresentActionSheet");
+	actionSheet.didPresentActionSheet = ^
+	{
+		[self log:@"ZIActionSheet didPresentActionSheet"];
 	};
 	
 	actionSheet.willDismissWithButtonIndex = ^(int buttonIndex) 
 	{ 
-		NSLog(@"ZIActionSheet willDismissWithButtonIndex %d", buttonIndex);
+		[self log:[NSString stringWithFormat:@"ZIActionSheet willDismissWithButtonIndex %d", buttonIndex]];
 	};
 	
 	actionSheet.didDismissWithButtonIndex = ^(int buttonIndex) 
 	{ 
-		NSLog(@"ZIActionSheet didDismissWithButtonIndex %d", buttonIndex);
+		[self log:[NSString stringWithFormat:@"ZIActionSheet didDismissWithButtonIndex %d", buttonIndex]];
 	};
 	
 	UIView *hostView = [sender isKindOfClass:[UIControl class]] ? [sender superview] : self.view;
@@ -187,13 +186,15 @@
 	ZIPopoverController *popoverController = [[ZIPopoverController alloc] initWithContentViewController:popoverContentsViewController];
 	popoverContentsViewController.contentSizeForViewInPopover = CGSizeMake(320.0, 320.0);
 	
-	popoverController.shouldDismiss = ^{
-		NSLog(@"ZIPopoverController shouldDismiss");
+	popoverController.shouldDismiss = ^
+	{
+		[self log:@"ZIPopoverController shouldDismiss"];
 		
 		return YES;
 	};
-	popoverController.didDismiss = ^{
-		NSLog(@"ZIPopoverController didDismiss");
+	popoverController.didDismiss = ^
+	{
+		[self log:@"ZIPopoverController didDismiss"];
 		
 		[popoverController release];
 	};

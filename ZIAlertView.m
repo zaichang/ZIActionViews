@@ -11,53 +11,74 @@
 @implementation ZIAlertView
 
 @synthesize clickedButtonAtIndex;
+@synthesize alertViewCancel;
 @synthesize willPresentAlertView;
 @synthesize didPresentAlertView;
 @synthesize willDismissWithButtonIndex;
 @synthesize didDismissWithButtonIndex;
 
 
-// I had trouble figuring a way to pass the va_list
-// to the superclass ... instead I'm trying this method
-// detailed here:
-// http://stackoverflow.com/questions/2345196/objective-c-passing-around-nil-terminated-argument-lists
-// 
-
-- (id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ... NS_REQUIRES_NIL_TERMINATION
-{	
-	if (self = [super initWithTitle:title message:message delegate:self cancelButtonTitle:cancelButtonTitle otherButtonTitles:nil])
+- (id)initWithTitle:(NSString *)title message:(NSString *)message cancelActionItem:(ZIActionItem *)cancelItem otherButtonActionItems:(NSArray *)otherItems
+{
+	self = [super initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:nil];
+	if (self)
 	{
-		trueDelegate = delegate;
+		firstOtherButtonIndex = -1;
 		
-		if (otherButtonTitles != nil) 
+		cancelActionItem = [cancelItem retain];
+		otherButtonActionItems = [otherItems retain];
+		
+		for (ZIActionItem *item in otherButtonActionItems)
 		{
-			[self addButtonWithTitle:otherButtonTitles];
-			va_list args;
-			va_start(args, otherButtonTitles);
-			NSString * title = nil;
-			while((title = va_arg(args,NSString*)))
-			{
-				[self addButtonWithTitle:title];
-			}
-			va_end(args);
-		}		
+			NSInteger index = [self addButtonWithTitle:item.title];
+			if (firstOtherButtonIndex < 0)
+				firstOtherButtonIndex = index;
+		}
+		
+		if (cancelActionItem.title)
+			self.cancelButtonIndex = [self addButtonWithTitle:cancelActionItem.title];
 	}
 	return self;
 }
 
+
+-(void) dealloc
+{
+	[cancelActionItem release];
+	cancelActionItem = nil;
+	
+	[otherButtonActionItems release];
+	otherButtonActionItems = nil;
+		
+	[super dealloc];
+}
+
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+	if (buttonIndex == self.cancelButtonIndex)
+	{
+		if (cancelActionItem.action)
+			cancelActionItem.action(cancelActionItem);
+	}
+	else
+	{
+		NSInteger index = buttonIndex - firstOtherButtonIndex;
+		ZIActionItem *item = [otherButtonActionItems objectAtIndex:index];
+		if (item.action)
+			item.action(item);
+	}
+	
 	if (clickedButtonAtIndex)
 		clickedButtonAtIndex(buttonIndex);
 }
 
-// Forwarding other UIAlertViewDelegates in case the caller wants to use these
-// 
-//- (void)alertViewCancel:(UIAlertView *)alertView
-//{
-//	if ([trueDelegate respondsToSelector:@selector(alertViewCancel:)])
-//		[trueDelegate alertViewCancel:self];
-//}
+
+- (void)alertViewCancel:(UIAlertView *)alertView
+{
+	if (alertViewCancel)
+		alertViewCancel(self);
+}
 
 - (void)willPresentAlertView:(UIAlertView *)alertView
 {
