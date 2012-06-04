@@ -21,16 +21,16 @@
 		39844F2A153565F100C29AE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39844F08153565F100C29AE4 /* Foundation.framework */; };
 		39844F32153565F100C29AE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 39844F30153565F100C29AE4 /* InfoPlist.strings */; };
 		39844F35153565F100C29AE4 /* ZIActionViewsTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F34153565F100C29AE4 /* ZIActionViewsTestTests.m */; };
-		39844F49153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */; };
-		39844F4A153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */; };
-		39844F4B153566B500C29AE4 /* ZIActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F42153566B500C29AE4 /* ZIActionItem.m */; };
-		39844F4C153566B500C29AE4 /* ZIActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F42153566B500C29AE4 /* ZIActionItem.m */; };
-		39844F4D153566B500C29AE4 /* ZIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F44153566B500C29AE4 /* ZIActionSheet.m */; };
-		39844F4E153566B500C29AE4 /* ZIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F44153566B500C29AE4 /* ZIActionSheet.m */; };
-		39844F4F153566B500C29AE4 /* ZIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F46153566B500C29AE4 /* ZIAlertView.m */; };
-		39844F50153566B500C29AE4 /* ZIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F46153566B500C29AE4 /* ZIAlertView.m */; };
-		39844F51153566B500C29AE4 /* ZIPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F48153566B500C29AE4 /* ZIPopoverController.m */; };
-		39844F52153566B500C29AE4 /* ZIPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39844F48153566B500C29AE4 /* ZIPopoverController.m */; };
+		39DA96E9157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E0157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m */; };
+		39DA96EA157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E0157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m */; };
+		39DA96EB157BB4ED0087D747 /* ZIActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E2157BB4ED0087D747 /* ZIActionItem.m */; };
+		39DA96EC157BB4ED0087D747 /* ZIActionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E2157BB4ED0087D747 /* ZIActionItem.m */; };
+		39DA96ED157BB4ED0087D747 /* ZIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E4157BB4ED0087D747 /* ZIActionSheet.m */; };
+		39DA96EE157BB4ED0087D747 /* ZIActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E4157BB4ED0087D747 /* ZIActionSheet.m */; };
+		39DA96EF157BB4ED0087D747 /* ZIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E6157BB4ED0087D747 /* ZIAlertView.m */; };
+		39DA96F0157BB4ED0087D747 /* ZIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E6157BB4ED0087D747 /* ZIAlertView.m */; };
+		39DA96F1157BB4ED0087D747 /* ZIPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E8157BB4ED0087D747 /* ZIPopoverController.m */; };
+		39DA96F2157BB4ED0087D747 /* ZIPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DA96E8157BB4ED0087D747 /* ZIPopoverController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,16 +64,16 @@
 		39844F31153565F100C29AE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		39844F33153565F100C29AE4 /* ZIActionViewsTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIActionViewsTestTests.h; sourceTree = "<group>"; };
 		39844F34153565F100C29AE4 /* ZIActionViewsTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIActionViewsTestTests.m; sourceTree = "<group>"; };
-		39844F3F153566B500C29AE4 /* UIViewController+ContextMenusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ContextMenusManagement.h"; path = "../../UIViewController+ContextMenusManagement.h"; sourceTree = "<group>"; };
-		39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ContextMenusManagement.m"; path = "../../UIViewController+ContextMenusManagement.m"; sourceTree = "<group>"; };
-		39844F41153566B500C29AE4 /* ZIActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIActionItem.h; path = ../../ZIActionItem.h; sourceTree = "<group>"; };
-		39844F42153566B500C29AE4 /* ZIActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIActionItem.m; path = ../../ZIActionItem.m; sourceTree = "<group>"; };
-		39844F43153566B500C29AE4 /* ZIActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIActionSheet.h; path = ../../ZIActionSheet.h; sourceTree = "<group>"; };
-		39844F44153566B500C29AE4 /* ZIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIActionSheet.m; path = ../../ZIActionSheet.m; sourceTree = "<group>"; };
-		39844F45153566B500C29AE4 /* ZIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIAlertView.h; path = ../../ZIAlertView.h; sourceTree = "<group>"; };
-		39844F46153566B500C29AE4 /* ZIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIAlertView.m; path = ../../ZIAlertView.m; sourceTree = "<group>"; };
-		39844F47153566B500C29AE4 /* ZIPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIPopoverController.h; path = ../../ZIPopoverController.h; sourceTree = "<group>"; };
-		39844F48153566B500C29AE4 /* ZIPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIPopoverController.m; path = ../../ZIPopoverController.m; sourceTree = "<group>"; };
+		39DA96DF157BB4ED0087D747 /* UIViewController+ContextMenusManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ContextMenusManagement.h"; path = "../../Classes/UIViewController+ContextMenusManagement.h"; sourceTree = "<group>"; };
+		39DA96E0157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ContextMenusManagement.m"; path = "../../Classes/UIViewController+ContextMenusManagement.m"; sourceTree = "<group>"; };
+		39DA96E1157BB4ED0087D747 /* ZIActionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIActionItem.h; path = ../../Classes/ZIActionItem.h; sourceTree = "<group>"; };
+		39DA96E2157BB4ED0087D747 /* ZIActionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIActionItem.m; path = ../../Classes/ZIActionItem.m; sourceTree = "<group>"; };
+		39DA96E3157BB4ED0087D747 /* ZIActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIActionSheet.h; path = ../../Classes/ZIActionSheet.h; sourceTree = "<group>"; };
+		39DA96E4157BB4ED0087D747 /* ZIActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIActionSheet.m; path = ../../Classes/ZIActionSheet.m; sourceTree = "<group>"; };
+		39DA96E5157BB4ED0087D747 /* ZIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIAlertView.h; path = ../../Classes/ZIAlertView.h; sourceTree = "<group>"; };
+		39DA96E6157BB4ED0087D747 /* ZIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIAlertView.m; path = ../../Classes/ZIAlertView.m; sourceTree = "<group>"; };
+		39DA96E7157BB4ED0087D747 /* ZIPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZIPopoverController.h; path = ../../Classes/ZIPopoverController.h; sourceTree = "<group>"; };
+		39DA96E8157BB4ED0087D747 /* ZIPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZIPopoverController.m; path = ../../Classes/ZIPopoverController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,16 +178,16 @@
 		39844F3E1535666E00C29AE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				39844F3F153566B500C29AE4 /* UIViewController+ContextMenusManagement.h */,
-				39844F40153566B500C29AE4 /* UIViewController+ContextMenusManagement.m */,
-				39844F41153566B500C29AE4 /* ZIActionItem.h */,
-				39844F42153566B500C29AE4 /* ZIActionItem.m */,
-				39844F43153566B500C29AE4 /* ZIActionSheet.h */,
-				39844F44153566B500C29AE4 /* ZIActionSheet.m */,
-				39844F45153566B500C29AE4 /* ZIAlertView.h */,
-				39844F46153566B500C29AE4 /* ZIAlertView.m */,
-				39844F47153566B500C29AE4 /* ZIPopoverController.h */,
-				39844F48153566B500C29AE4 /* ZIPopoverController.m */,
+				39DA96DF157BB4ED0087D747 /* UIViewController+ContextMenusManagement.h */,
+				39DA96E0157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m */,
+				39DA96E1157BB4ED0087D747 /* ZIActionItem.h */,
+				39DA96E2157BB4ED0087D747 /* ZIActionItem.m */,
+				39DA96E3157BB4ED0087D747 /* ZIActionSheet.h */,
+				39DA96E4157BB4ED0087D747 /* ZIActionSheet.m */,
+				39DA96E5157BB4ED0087D747 /* ZIAlertView.h */,
+				39DA96E6157BB4ED0087D747 /* ZIAlertView.m */,
+				39DA96E7157BB4ED0087D747 /* ZIPopoverController.h */,
+				39DA96E8157BB4ED0087D747 /* ZIPopoverController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -302,11 +302,11 @@
 				39844F13153565F100C29AE4 /* main.m in Sources */,
 				39844F17153565F100C29AE4 /* AppDelegate.m in Sources */,
 				39844F1A153565F100C29AE4 /* ViewController.m in Sources */,
-				39844F49153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */,
-				39844F4B153566B500C29AE4 /* ZIActionItem.m in Sources */,
-				39844F4D153566B500C29AE4 /* ZIActionSheet.m in Sources */,
-				39844F4F153566B500C29AE4 /* ZIAlertView.m in Sources */,
-				39844F51153566B500C29AE4 /* ZIPopoverController.m in Sources */,
+				39DA96E9157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m in Sources */,
+				39DA96EB157BB4ED0087D747 /* ZIActionItem.m in Sources */,
+				39DA96ED157BB4ED0087D747 /* ZIActionSheet.m in Sources */,
+				39DA96EF157BB4ED0087D747 /* ZIAlertView.m in Sources */,
+				39DA96F1157BB4ED0087D747 /* ZIPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,11 +315,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				39844F35153565F100C29AE4 /* ZIActionViewsTestTests.m in Sources */,
-				39844F4A153566B500C29AE4 /* UIViewController+ContextMenusManagement.m in Sources */,
-				39844F4C153566B500C29AE4 /* ZIActionItem.m in Sources */,
-				39844F4E153566B500C29AE4 /* ZIActionSheet.m in Sources */,
-				39844F50153566B500C29AE4 /* ZIAlertView.m in Sources */,
-				39844F52153566B500C29AE4 /* ZIPopoverController.m in Sources */,
+				39DA96EA157BB4ED0087D747 /* UIViewController+ContextMenusManagement.m in Sources */,
+				39DA96EC157BB4ED0087D747 /* ZIActionItem.m in Sources */,
+				39DA96EE157BB4ED0087D747 /* ZIActionSheet.m in Sources */,
+				39DA96F0157BB4ED0087D747 /* ZIAlertView.m in Sources */,
+				39DA96F2157BB4ED0087D747 /* ZIPopoverController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +489,7 @@
 				39844F3A153565F100C29AE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39844F3B153565F100C29AE4 /* Build configuration list for PBXNativeTarget "ZIActionViewsTestTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +498,7 @@
 				39844F3D153565F100C29AE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
